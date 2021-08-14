@@ -61,6 +61,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\nikla\source\repos\h1k4r1-injector\headers;$(Qt_INCLUDEPATH_);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -92,15 +93,15 @@
   <ItemGroup>
     <QtRcc Include="h1k4r1injector.qrc" />
     <QtUic Include="..\..\ui\injector-ui.ui" />
-    <QtUic Include="h1k4r1injector.ui" />
-    <QtMoc Include="h1k4r1injector.h" />
-    <ClCompile Include="h1k4r1injector.cpp" />
-    <ClCompile Include="injectdialog.cpp" />
-    <ClCompile Include="main.cpp" />
-    <QtUic Include="injectdialog.ui" />
+    <QtUic Include="ui\h1k4r1injector.ui" />
+    <QtMoc Include="headers\h1k4r1injector.h" />
+    <ClCompile Include="sources\h1k4r1injector.cpp" />
+    <ClCompile Include="sources\injectdialog.cpp" />
+    <ClCompile Include="sources\main.cpp" />
+    <QtUic Include="ui\injectdialog.ui" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="injectdialog.h" />
+    <QtMoc Include="headers\injectdialog.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

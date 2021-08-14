@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="h1k4r1injector.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="injectdialog.cpp">
+    <ClCompile Include="sources\h1k4r1injector.cpp" />
+    <ClCompile Include="sources\main.cpp" />
+    <ClCompile Include="sources\injectdialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="h1k4r1injector.h" />
-    <QtMoc Include="injectdialog.h">
+    <QtMoc Include="headers\h1k4r1injector.h" />
+    <QtMoc Include="headers\injectdialog.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -17,8 +17,8 @@
     <QtRcc Include="h1k4r1injector.qrc" />
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="h1k4r1injector.ui" />
-    <QtUic Include="injectdialog.ui">
+    <QtUic Include="ui\h1k4r1injector.ui" />
+    <QtUic Include="ui\injectdialog.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="..\..\ui\injector-ui.ui">
