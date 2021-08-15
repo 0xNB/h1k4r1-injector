@@ -1,9 +1,11 @@
-#include "injectdialog.h"
+#include "injectDialog.h"
 
 InjectDialog::InjectDialog(QWidget *parent)
 	: QDialog(parent)
 {
-	setupUi(this);
+	ui.setupUi(this);
+	ui.injectionProgressLabel->setText(QString("some test"));
+
 }
 
 InjectDialog::~InjectDialog()

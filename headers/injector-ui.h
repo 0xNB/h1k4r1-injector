@@ -10,4 +10,12 @@ class InjectorUi : public QWidget, public Ui::InjectorWidget
 public:
 	InjectorUi(QWidget* parent = Q_NULLPTR);
 	~InjectorUi();
+
+public slots:
+	void inject();
+
+private:
+	void on_injectButton_clicked();
+	Ui::InjectorWidget ui;
 };
+

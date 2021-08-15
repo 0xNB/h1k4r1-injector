@@ -1,7 +1,8 @@
-#include "h1k4r1injector.h"
+#include "injectorMainWindow.h"
 #include "injector-ui.h"
+#include "injectdialog.h"
 
-h1k4r1injector::h1k4r1injector(QWidget *parent)
+InjectorMainWindow::InjectorMainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);

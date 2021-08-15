@@ -10,4 +10,8 @@ class InjectDialog : public QDialog, public Ui::InjectDialog
 public:
 	InjectDialog(QWidget *parent = Q_NULLPTR);
 	~InjectDialog();
+
+private: 
+	Ui::InjectDialog ui;
 };
+	

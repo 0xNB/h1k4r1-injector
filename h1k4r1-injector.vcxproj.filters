@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="sources\h1k4r1injector.cpp" />
+    <ClCompile Include="sources\injectorMainWindow.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <ClCompile Include="sources\injectdialog.cpp">
       <Filter>Source Files</Filter>
@@ -9,13 +9,19 @@
     <ClCompile Include="sources\injector-ui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sources\previewwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="headers\h1k4r1injector.h" />
-    <QtMoc Include="headers\injectdialog.h">
+    <QtMoc Include="headers\injectorMainWindow.h" />
+    <QtMoc Include="headers\injectDialog.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="headers\injector-ui.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="headers\previewwidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -28,6 +34,9 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="..\..\ui\injector-ui.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\previewwidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
