@@ -9,8 +9,8 @@ CentralWidget::CentralWidget(QWidget* parent)
 {
 	ui.setupUi(this);
 	this->timeWasted = 0;
-	this->setFixedSize(QSize(width(), height()));
 	startClock();
+	this->setFixedSize(QSize(width() + 50, height()));
 }
 
 void CentralWidget::startClock() {
