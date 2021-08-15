@@ -3,10 +3,10 @@
   <ItemGroup>
     <ClCompile Include="sources\injectorMainWindow.cpp" />
     <ClCompile Include="sources\main.cpp" />
-    <ClCompile Include="sources\injectdialog.cpp">
+    <ClCompile Include="sources\injectDialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sources\injector-ui.cpp">
+    <ClCompile Include="sources\centralWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sources\previewwidget.cpp">
@@ -18,7 +18,7 @@
     <QtMoc Include="headers\injectDialog.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="headers\injector-ui.h">
+    <QtMoc Include="headers\centralWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="headers\previewwidget.h">
@@ -27,6 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="h1k4r1injector.qrc" />
+    <QtRcc Include="..\..\..\Desktop\git\BreezeStyleSheets\dist\breeze.qrc" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="ui\h1k4r1injector.ui" />
@@ -56,5 +57,8 @@
       <Extensions>ui</Extensions>
       <ParseFiles>true</ParseFiles>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Desktop\git\BreezeStyleSheets\dist\dark\stylesheet.qss" />
   </ItemGroup>
 </Project>

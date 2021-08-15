@@ -91,6 +91,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <QtRcc Include="..\..\..\Desktop\git\BreezeStyleSheets\dist\breeze.qrc" />
     <QtRcc Include="h1k4r1injector.qrc" />
     <QtUic Include="..\..\ui\injector-ui.ui" />
     <QtUic Include="ui\previewwidget.ui" />
@@ -98,8 +99,8 @@
     <QtMoc Include="headers\injectorMainWindow.h" />
     <ClCompile Include="sources\previewwidget.cpp" />
     <ClCompile Include="sources\injectorMainWindow.cpp" />
-    <ClCompile Include="sources\injectdialog.cpp" />
-    <ClCompile Include="sources\injector-ui.cpp" />
+    <ClCompile Include="sources\injectDialog.cpp" />
+    <ClCompile Include="sources\centralWidget.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <QtUic Include="ui\injectdialog.ui" />
   </ItemGroup>
@@ -107,10 +108,13 @@
     <QtMoc Include="headers\injectDialog.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="headers\injector-ui.h" />
+    <QtMoc Include="headers\centralWidget.h" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="headers\previewwidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Desktop\git\BreezeStyleSheets\dist\dark\stylesheet.qss" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
