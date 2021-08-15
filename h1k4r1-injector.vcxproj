@@ -97,11 +97,15 @@
     <QtMoc Include="headers\h1k4r1injector.h" />
     <ClCompile Include="sources\h1k4r1injector.cpp" />
     <ClCompile Include="sources\injectdialog.cpp" />
+    <ClCompile Include="sources\injector-ui.cpp" />
     <ClCompile Include="sources\main.cpp" />
     <QtUic Include="ui\injectdialog.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="headers\injectdialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="headers\injector-ui.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

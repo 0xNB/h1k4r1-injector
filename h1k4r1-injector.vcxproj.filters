@@ -6,10 +6,16 @@
     <ClCompile Include="sources\injectdialog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sources\injector-ui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="headers\h1k4r1injector.h" />
     <QtMoc Include="headers\injectdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="headers\injector-ui.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
