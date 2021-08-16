@@ -1,5 +1,6 @@
 #include "centralWidget.h"
 #include "injectdialog.h"
+#include "searchResultWidget.h"
 #include <QFile>
 #include <QTextStream>
 #include <qtimer.h>
@@ -28,6 +29,11 @@ void CentralWidget::updateTime() {
 void CentralWidget::inject() {
 	InjectDialog dialog(this);
 	dialog.exec();
+}
+
+void CentralWidget::search() {
+	SearchResultWidget searchResults = new SearchResultWidget(this);
+	searchResults.show();
 }
 
 CentralWidget::~CentralWidget()

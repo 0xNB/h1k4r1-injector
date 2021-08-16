@@ -12,6 +12,9 @@
     <ClCompile Include="sources\previewwidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sources\searchResultWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="headers\injectorMainWindow.h" />
@@ -22,6 +25,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="headers\previewwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="headers\searchResultWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -38,6 +44,12 @@
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="ui\previewwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\injectorui.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ui\SearchResultWidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -60,5 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Desktop\git\BreezeStyleSheets\dist\dark\stylesheet.qss" />
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
   </ItemGroup>
 </Project>

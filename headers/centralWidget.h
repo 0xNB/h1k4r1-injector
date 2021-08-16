@@ -15,6 +15,7 @@ public:
 
 public slots:
 	void inject();
+	void search();
 
 private:
 	Ui::InjectorWidget ui;
