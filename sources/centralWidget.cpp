@@ -4,6 +4,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <qtimer.h>
+#include <string>
 
 CentralWidget::CentralWidget(QWidget* parent)
 	: QWidget(parent)
@@ -32,8 +33,12 @@ void CentralWidget::inject() {
 }
 
 void CentralWidget::search() {
-	SearchResultWidget searchResults = new SearchResultWidget(this);
-	searchResults.show();
+	QTextEdit* processNameTextbox = ui.programNameTextbox;;
+	QString procNamePattern = processNameTextbox->toPlainText();
+
+	vector<PROCESSENTRY32> foundStrings = processSearcher.searchProcessByName(procNamePattern.toStdString());
+	SearchResultWidget* searchResults = new SearchResultWidget(foundStrings);
+	searchResults->show();
 }
 
 CentralWidget::~CentralWidget()

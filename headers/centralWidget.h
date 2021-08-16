@@ -2,6 +2,7 @@
 
 #include <QWidget>
 #include "ui_injector-ui.h"
+#include "ProcessSearcher.h"
 
 class CentralWidget : public QWidget, public Ui::InjectorWidget
 {
@@ -20,5 +21,6 @@ public slots:
 private:
 	Ui::InjectorWidget ui;
 	int timeWasted;
+	ProcessSearcher processSearcher;
 };
 
