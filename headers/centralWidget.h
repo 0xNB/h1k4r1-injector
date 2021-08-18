@@ -1,6 +1,7 @@
 #pragma once
 
 #include <QWidget>
+#include <qfiledialog.h>
 #include "ui_injector-ui.h"
 #include "ProcessSearcher.h"
 
@@ -17,10 +18,14 @@ public:
 public slots:
 	void inject();
 	void search();
+	void searchById();
+	void setSelectedProcess(PROCESSENTRY32 process);
+	void selectFile();
 
 private:
 	Ui::InjectorWidget ui;
 	int timeWasted;
 	ProcessSearcher processSearcher;
+	PROCESSENTRY32 selectedProcess;
 };
 

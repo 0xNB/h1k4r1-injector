@@ -37,8 +37,42 @@ void CentralWidget::search() {
 	QString procNamePattern = processNameTextbox->toPlainText();
 
 	vector<PROCESSENTRY32> foundStrings = processSearcher.searchProcessByName(procNamePattern.toStdString());
-	SearchResultWidget* searchResults = new SearchResultWidget(foundStrings);
+	SearchResultWidget* searchResults = new SearchResultWidget(this, foundStrings);
 	searchResults->show();
+}
+
+void CentralWidget::searchById() {
+	QTextEdit* procIdTextBox = ui.processIdTextEdit;;
+	QString procId = procIdTextBox->toPlainText();
+
+	vector<PROCESSENTRY32> foundStrings = processSearcher.searchByProcessId(procId.toStdString());
+	SearchResultWidget* searchResults = new SearchResultWidget(this, foundStrings);
+	searchResults->show();
+}
+
+void CentralWidget::setSelectedProcess(PROCESSENTRY32 process)
+{
+	this->selectedProcess = process;
+	std::wstring procWstring = std::wstring(process.szExeFile);
+	std::string procString = std::string(procWstring.begin(), procWstring.end());
+
+	std::string displayed = "[";
+	displayed += std::to_string(process.th32ProcessID);
+	displayed += "] ";
+	displayed += procString;
+
+	this->ui.foundProcessLabel->setText(QString::fromStdString(displayed));
+	this->ui.processIdTextEdit->setText(QString::fromStdString(std::to_string(process.th32ProcessID)));
+	this->ui.programNameTextbox->setText(QString::fromStdString(displayed));
+}
+
+void CentralWidget::selectFile()
+{
+	QFileDialog dialog(this);
+	dialog.setFileMode(QFileDialog::AnyFile);
+	QString fileName = dialog.getOpenFileName();
+
+	this->ui.selectedFileText->setText(fileName);
 }
 
 CentralWidget::~CentralWidget()

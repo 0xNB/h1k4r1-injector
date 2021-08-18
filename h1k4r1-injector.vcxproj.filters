@@ -18,6 +18,9 @@
     <ClCompile Include="sources\ProcessSearcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sources\CodeExecutionMethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="headers\injectorMainWindow.h" />
@@ -80,6 +83,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\ProcessSearcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\CodeExecutionMethod.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

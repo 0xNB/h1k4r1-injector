@@ -99,6 +99,7 @@
     <QtUic Include="ui\previewwidget.ui" />
     <QtUic Include="ui\h1k4r1injector.ui" />
     <QtMoc Include="headers\injectorMainWindow.h" />
+    <ClCompile Include="sources\CodeExecutionMethod.cpp" />
     <ClCompile Include="sources\ProcessSearcher.cpp" />
     <ClCompile Include="sources\searchResultWidget.cpp" />
     <ClCompile Include="sources\previewwidget.cpp" />
@@ -126,6 +127,7 @@
     <QtMoc Include="headers\searchResultWidget.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\CodeExecutionMethod.h" />
     <ClInclude Include="headers\ProcessSearcher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

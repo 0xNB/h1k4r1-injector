@@ -14,10 +14,10 @@
 #include <locale>
 #include <codecvt>
 #include <string>
-
 #include <iostream>
-
 #include <stdexcept>
+#include <cwctype>
+#include <algorithm>
 
 using namespace std;
 
@@ -26,6 +26,7 @@ class ProcessSearcher
 public:
 	ProcessSearcher();
 	vector<PROCESSENTRY32> searchProcessByName(string name);
+	vector<PROCESSENTRY32> searchByProcessId(string processId);
 
 	~ProcessSearcher();
 };

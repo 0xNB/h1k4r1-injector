@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>495</width>
-    <height>263</height>
+    <width>501</width>
+    <height>318</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,8 +36,44 @@
     <string>Select Process from List</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="processSelectButton">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>270</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select Process</string>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>processList</zorder>
+  <zorder>processSelectButton</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>processSelectButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SearchResultWidget</receiver>
+   <slot>selectProcess()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>250</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>selectProcess()</slot>
+ </slots>
 </ui>
