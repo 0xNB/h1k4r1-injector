@@ -21,6 +21,15 @@
     <ClCompile Include="sources\CodeExecutionMethod.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sources\injectionMethods\InjectionMethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\injectionMethods\ThreadCreationStrategy\CreateRemoteThreadStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\injectionMethods\ThreadCreationStrategy\GenericThreadingStrategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="headers\injectorMainWindow.h" />
@@ -86,6 +95,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\CodeExecutionMethod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\InjectionMethods\InjectionMethod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\InjectionMethods\ThreadCreationStrategy\CreateRemoteThreadStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\InjectionMethods\ThreadCreationStrategy\GenericThreadingStrategy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

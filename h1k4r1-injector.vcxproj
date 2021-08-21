@@ -99,6 +99,9 @@
     <QtUic Include="ui\previewwidget.ui" />
     <QtUic Include="ui\h1k4r1injector.ui" />
     <QtMoc Include="headers\injectorMainWindow.h" />
+    <ClCompile Include="sources\injectionMethods\ThreadCreationStrategy\GenericThreadingStrategy.cpp" />
+    <ClCompile Include="sources\injectionMethods\ThreadCreationStrategy\CreateRemoteThreadStrategy.cpp" />
+    <ClCompile Include="sources\injectionMethods\InjectionMethod.cpp" />
     <ClCompile Include="sources\CodeExecutionMethod.cpp" />
     <ClCompile Include="sources\ProcessSearcher.cpp" />
     <ClCompile Include="sources\searchResultWidget.cpp" />
@@ -127,8 +130,11 @@
     <QtMoc Include="headers\searchResultWidget.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\InjectionMethods\ThreadCreationStrategy\GenericThreadingStrategy.h" />
+    <ClInclude Include="headers\InjectionMethods\ThreadCreationStrategy\CreateRemoteThreadStrategy.h" />
     <ClInclude Include="headers\CodeExecutionMethod.h" />
     <ClInclude Include="headers\ProcessSearcher.h" />
+    <ClInclude Include="headers\InjectionMethods\InjectionMethod.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

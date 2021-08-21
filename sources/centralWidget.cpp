@@ -13,6 +13,7 @@ CentralWidget::CentralWidget(QWidget* parent)
 	this->timeWasted = 0;
 	startClock();
 	this->setFixedSize(QSize(width() + 50, height()));
+	ui.timeWastedLabel->setText(QString::fromStdString("Time wasted [s]"));
 }
 
 void CentralWidget::startClock() {
