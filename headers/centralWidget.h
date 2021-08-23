@@ -3,6 +3,7 @@
 #include <QWidget>
 #include <qfiledialog.h>
 #include "ui_injector-ui.h"
+#include "InjectionMethods/InjectionMethod.h"
 #include "ProcessSearcher.h"
 
 class CentralWidget : public QWidget, public Ui::InjectorWidget
@@ -27,5 +28,6 @@ private:
 	int timeWasted;
 	ProcessSearcher processSearcher;
 	PROCESSENTRY32 selectedProcess;
+	const char* dllName;
 };
 

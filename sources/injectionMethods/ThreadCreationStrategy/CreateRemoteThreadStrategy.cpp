@@ -1,1 +1,1 @@
-#include "CreateRemoteThreadStrategy.h"
+#include "InjectionMethods/ThreadCreationStrategy/CreateRemoteThreadStrategy.h"

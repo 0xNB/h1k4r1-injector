@@ -1,1 +1,5 @@
-#include "GenericThreadingStrategy.h"
+#include "InjectionMethods/ThreadCreationStrategy/GenericThreadingStrategy.h"
+
+GenericThreadingStrategy::GenericThreadingStrategy() {
+
+}

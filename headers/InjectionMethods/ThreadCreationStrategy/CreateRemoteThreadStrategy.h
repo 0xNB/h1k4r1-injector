@@ -1,5 +1,8 @@
+#include "GenericThreadingStrategy.h"
+
 #pragma once
-class CreateRemoteThreadStrategy
+class CreateRemoteThreadStrategy : public GenericThreadingStrategy
 {
+	
 };
 
