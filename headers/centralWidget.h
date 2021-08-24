@@ -28,6 +28,6 @@ private:
 	int timeWasted;
 	ProcessSearcher processSearcher;
 	PROCESSENTRY32 selectedProcess;
-	const char* dllName;
+	std::string dllName;
 };
 

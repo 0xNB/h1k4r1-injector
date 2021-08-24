@@ -30,7 +30,7 @@ void CentralWidget::updateTime() {
 
 void CentralWidget::inject() {
 	OutputDebugStringA("[INFO] Inject button clicked\n");
-	InjectionMethod injectionMethod(this->selectedProcess, this->dllName);
+	InjectionMethod injectionMethod(this->selectedProcess, this->dllName.c_str());
 	try {
 		injectionMethod.inject();
 	}
@@ -82,7 +82,7 @@ void CentralWidget::selectFile()
 	dialog.setFileMode(QFileDialog::AnyFile);
 	QString fileName = dialog.getOpenFileName();
 
-	this->dllName = fileName.toStdString().c_str();
+	this->dllName = fileName.toStdString();
 	this->ui.selectedFileText->setText(fileName);
 }
 
